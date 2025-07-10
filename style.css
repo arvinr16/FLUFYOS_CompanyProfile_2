@@ -1,0 +1,388 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a)
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header div img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 12px;
+}
+
+header div h1 {
+    font-size: 32px;
+    color: white;
+    cursor: default;
+}
+
+/* Icon Company Square Effect Start*/
+.div-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.squareLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 1.5px;
+    background-color: white;
+}
+
+.squareRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 1.5px;
+    background-color: white;
+}
+
+.squareTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5px;
+    width: 69px;
+    background-color: white;
+}
+
+.squareBottom {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    height: 1.5px;
+    width: 70px;
+    background-color: white;
+}
+/* Icon Company Square Effect End*/
+
+header div a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 64px 103.55px;
+    padding-top: 98px;
+    position: relative;
+}
+
+section::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    color: #676767;
+    font-weight: bold;
+    font-size: 58px;
+    opacity: 0.25;
+    top: 10px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p {
+    color: #676767;
+}
+
+.div-landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-landing img {
+    width: 100%;
+    height: auto;
+}
+
+.div-landing h3 {
+    font-size: 28px;
+}
+
+.div-landing h1 {
+    font-size: 48px;
+}
+
+/* .div-landing div h3:nth-of-type(2) { mengambil h3 kedua
+    margin-bottom: 16px;
+} */
+
+.div-landing p {
+    font-size: 18px;
+    margin: 16px 0 16px 0;
+}
+
+.pipe {
+    display: inline-block;
+    background-color: black;
+    height: 200px;
+    width: 1.5px;
+}
+
+/* Button Styling Start */
+.btn-landing {
+    display: flex;
+    align-items: center;
+}
+
+.btn-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 8px;
+    color: white;
+    background: linear-gradient(45deg, #70de72, #67c569);
+    border: 2px solid #5bb45c;
+    border-radius: 30px;
+    cursor: pointer;
+    background-clip: border-box;
+    -webkit-text-fill-color: white;
+    transition: background 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease,
+                -webkit-text-fill-color 0.5s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-main:hover {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #70de72;
+}
+
+.btn-second {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 8px;
+    color: #848484;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #5bb45c;
+    border-radius: 30px;
+    transition: background 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease,
+                -webkit-text-fill-color 0.5s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-second:hover {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #70de72;
+}
+
+.btn-header {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #86ff88;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.btn-header:hover {
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #a1ffa2;
+}
+
+.btn-header-text {
+    background: none;
+    color: #989898;
+    transition: all 0.5s ease;
+}
+
+.btn-header-text:hover {
+    background-image: linear-gradient(45deg, #82ff84, #4fff52);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Button Styling End */
+
+section#about {
+    display: flex;
+    justify-content: center;
+    padding-top: 108px;
+}
+
+#about::before {
+    content: 'About Us';
+}
+
+#about {
+    margin-top: 64px;
+}
+
+.about-p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 16px 0;
+}
+
+.about-p p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.about-h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 32px 0;
+}
+
+.about-h1 h1 {
+    background: linear-gradient(45deg, #70de72, #3ddbab);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    background-clip: text;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.about-item img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.about-item {
+    position: relative;
+    height: 260px;
+}
+
+.about-item:after {
+    content: '';
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-item:hover::after {
+    opacity: 1;
+}
+
+#about-1:hover::after {
+    content: 'Web Development';
+}
+
+#about-2:hover::after {
+    content: 'Design Web';
+}
+
+#about-3:hover::after {
+    content: 'Frontend Development';
+}
+
+#about-4:hover::after {
+    content: 'Backend Development';
+}
+
+section#service {
+    padding-top: 108px;
+}
+
+#service {
+    margin-top: 64px;
+}
+
+#service::before {
+    content: 'Our Service';
+}
+
+.service-p {
+    padding: 0 0 38px 0;
+}
+
+.service-div {
+    display: flex;
+    gap: 10px;
+}
+
+.service-div-item {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 8px 18px 8px;
+    box-shadow: 2px 6px 8px rgba(125, 125, 125, 0.5);
+    transition: 1s;
+    cursor: default;
+}
+
+.service-div-item:hover {
+    transform: scale(0.9);
+    box-shadow: 2px 6px 24px rgba(125, 125, 125, 0.5);
+}
+
+.service-div h2 {
+    padding: 0 0 8px 0;
+}
+
+.service-div img {
+    width: 100%;
+    height: auto;
+}
+
+/* Testing */
+/* Testing */
+/* Testing0 */
+/* Testing1 */
