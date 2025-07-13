@@ -368,7 +368,7 @@ section#about {
     -webkit-text-fill-color: transparent;
 }
 
-.about-btn button {
+.about-btn button { /* lanjutin bagian ini */
     margin: 24px 0 0 0;
 }
 
