@@ -245,11 +245,17 @@ section#about {
     margin-top: 64px;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .about-p {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 0 0 16px 0;
+    padding: 0 0 48px 0;
 }
 
 .about-p p {
@@ -338,6 +344,34 @@ section#about {
     content: 'Backend Development';
 }
 
+.about-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 0 0 0;
+}
+
+.about-btn h1 {
+    font-size: 32px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #70de72, #3ddbab);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-btn h3 {
+    font-size: 22px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #70de72, #3ddbab);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-btn button {
+    margin: 24px 0 0 0;
+}
+
 section#service {
     padding-top: 108px;
 }
@@ -351,7 +385,7 @@ section#service {
 }
 
 .service-p {
-    padding: 0 0 38px 0;
+    padding: 0 0 48px 0;
 }
 
 .service-div {
@@ -381,5 +415,3 @@ section#service {
     width: 100%;
     height: auto;
 }
-
-/* Testing commit */
