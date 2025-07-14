@@ -10,7 +10,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
-    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a)
+    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header div {
@@ -85,6 +88,7 @@ section {
     padding: 64px 103.55px;
     padding-top: 98px;
     position: relative;
+    scroll-margin-top: 106px;
 }
 
 section::before {
@@ -245,12 +249,6 @@ section#about {
     margin-top: 64px;
 }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .about-p {
     display: flex;
     text-align: center;
@@ -377,7 +375,7 @@ section#about {
     text-decoration: none;
 }
 
-.about-btn button {
+.btn-anchor {
     background: linear-gradient(45deg, #70de72, #67c569);
     display: flex;
     align-items: center;
@@ -398,7 +396,7 @@ section#about {
                 box-shadow 0.5s ease;
 }
 
-.about-btn button:hover {
+.btn-anchor:hover {
     background: linear-gradient(45deg, #70de72, #67c569);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -407,6 +405,9 @@ section#about {
 }
 
 section#service {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     padding-top: 108px;
 }
 
@@ -448,4 +449,16 @@ section#service {
 .service-div img {
     width: 100%;
     height: auto;
+}
+
+.service-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 58px 0 0 0; 
+}
+
+.service-contact h1 {
+    font-size: 32px;
 }
