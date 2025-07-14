@@ -368,8 +368,42 @@ section#about {
     -webkit-text-fill-color: transparent;
 }
 
-.about-btn button { /* lanjutin bagian ini */
+.about-btn-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.about-btn-detail a {
+    text-decoration: none;
+}
+
+.about-btn button {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    display: flex;
+    align-items: center;
     margin: 24px 0 0 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 16px;
+    cursor: pointer;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid #5bb45c;
+    background-clip: border-box;
+    -webkit-text-fill-color: white;
+    transition: background 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease,
+                -webkit-text-fill-color 0.5s ease,
+                box-shadow 0.5s ease;
+}
+
+.about-btn button:hover {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #83ff85;
+    box-shadow: 0 3px 16px #70de72;
 }
 
 section#service {
