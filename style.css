@@ -462,3 +462,44 @@ section#service {
 .service-contact h1 {
     font-size: 32px;
 }
+
+section#contact {
+    display: flex;
+    justify-content: center;
+    padding: 108px;
+}
+
+#contact {
+    margin-top: 64px;
+}
+
+#contact::before {
+    content: 'Contact';
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.contact-detail h1 {
+    font-size: 26px;
+}
+
+.contact-building {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-img img {
+    height: auto;
+    width: 100%;
+}
