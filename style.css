@@ -11,9 +11,15 @@ header {
     align-items: center;
     padding: 16px 24px;
     background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a);
+    box-shadow: 0 2px 11px rgb(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+header:hover {
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.5);
 }
 
 header div {
@@ -82,6 +88,15 @@ header div a {
     display: flex;
     color: white;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+header div a:hover {
+    background: linear-gradient(45deg, #7c44c0, #8733ab);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 section {
@@ -676,10 +691,16 @@ footer {
 
 .footer-about h3 {
     font-size: 18px;
-    background: linear-gradient(45deg, #2ec913, #108406);
+    background: linear-gradient(45deg, #3a9729, #29da19);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 0 0 8px 0;
+}
+
+.footer-about h5 {
+    background: linear-gradient(45deg, #298e97, #19b3da);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-about a {
