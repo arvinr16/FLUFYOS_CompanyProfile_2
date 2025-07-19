@@ -827,4 +827,33 @@ footer div h6 {
     .pipe {
         display: none;
     }
+
+    .about-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-div {
+        flex-direction: column;
+    }
+
+    .contact-detail {
+        flex-direction: column;
+    }
+
+    section#contact {
+        padding: 64px 103.55px;
+    }
+
+    .contact-img {
+        flex-direction: column;
+    }
+
+    .footer-div {
+        flex-direction: column;
+    }
+
+    .pipe1 {
+        display: none;
+    }
 }
