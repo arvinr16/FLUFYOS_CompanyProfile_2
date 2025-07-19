@@ -6,10 +6,6 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 24px;
     background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a);
     box-shadow: 0 2px 11px rgb(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -22,10 +18,84 @@ header:hover {
     box-shadow: 0 4px 20px rgb(0, 0, 0, 0.5);
 }
 
-header div {
+/* Navbar Start */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 16px 24px;
+    z-index: 1000;
+}
+
+.navbar div:nth-child(1) {
     display: flex;
     align-items: center;
-    gap: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.navbar ul a:hover {
+    background: linear-gradient(45deg, #7c44c0, #8733ab);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+/* Navbar End */
+
+/* Menu Hamburger Start */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30%;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    display: block;
+    transform-origin: center;
+    backface-visibility: hidden;
+    will-change: transform;
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3 ease-in-out;
+}
+/* Menu Hamburger End */
+
+/* Hamburger Navbar Active becomes X */
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
 }
 
 header div img {
@@ -38,6 +108,7 @@ header div img {
 header div h1 {
     font-size: 32px;
     color: white;
+    padding: 0 16px 0 16px;
     cursor: default;
 }
 
@@ -76,7 +147,7 @@ header div h1 {
 
 .squareBottom {
     position: absolute;
-    bottom: 12px;
+    bottom: 6px;
     left: 0;
     height: 1.5px;
     width: 70px;
@@ -84,20 +155,6 @@ header div h1 {
 }
 /* Icon Company Square Effect End*/
 
-header div a {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-header div a:hover {
-    background: linear-gradient(45deg, #7c44c0, #8733ab);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
 section {
     padding: 64px 103.55px;
@@ -722,4 +779,41 @@ footer {
 
 footer div h6 {
     color: #676767;
+}
+
+/* Responsive */ 
+@media only screen and (min-width: 320px) { /* Smartphone Very Small and for Hamburger Navbar */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(45deg, #67c569, #59ca8a);
+        opacity: 0.5s;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-link.open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 500px;
+        opacity: 0.9;
+    }
+
+    .nav-link li {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .nav-link a {
+        display: block;
+    }
 }
