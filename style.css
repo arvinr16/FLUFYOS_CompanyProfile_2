@@ -6,16 +6,9 @@
 }
 
 header {
-    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a);
-    box-shadow: 0 2px 11px rgb(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: sticky;
     top: 0;
     z-index: 1;
-}
-
-header:hover {
-    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.5);
 }
 
 /* Navbar Start */
@@ -24,8 +17,15 @@ header:hover {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a);
+    box-shadow: 0 2px 11px rgb(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 16px 24px;
     z-index: 1000;
+}
+
+.navbar:hover {
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.5);
 }
 
 .navbar div:nth-child(1) {
@@ -56,7 +56,7 @@ header:hover {
 .nav-link {
     display: flex;
     list-style: none;
-    gap: 6px;
+    gap: 16px;
 }
 /* Navbar End */
 
@@ -81,7 +81,7 @@ header:hover {
     width: 30px;
     background-color: white;
     border-radius: 3px;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 /* Menu Hamburger End */
 
@@ -783,6 +783,7 @@ footer div h6 {
 
 /* Responsive */ 
 @media only screen and (min-width: 320px) { /* Smartphone Very Small and for Hamburger Navbar */
+    /* Hamburger Navbar feature Start */
     .hamburger {
         display: flex;
     }
@@ -793,6 +794,7 @@ footer div h6 {
         top: 100%;
         left: 0;
         right: 0;
+        gap: 6px;
         background: linear-gradient(45deg, #67c569, #59ca8a);
         opacity: 0.5s;
         max-height: 0;
@@ -815,5 +817,14 @@ footer div h6 {
 
     .nav-link a {
         display: block;
+    }
+    /* Hamburger Navbar feature End */
+
+    .div-landing {
+        flex-direction: column;
+    }
+
+    .pipe {
+        display: none;
     }
 }
