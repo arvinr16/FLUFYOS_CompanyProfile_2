@@ -781,7 +781,9 @@ footer div h6 {
     color: #676767;
 }
 
-/* Responsive */ 
+/* Responsive */
+
+/* Responsive Mobile Section Start */
 @media only screen and (min-width: 320px) { /* Smartphone Very Small and for Hamburger Navbar */
     /* Hamburger Navbar feature Start */
     .hamburger {
@@ -856,4 +858,67 @@ footer div h6 {
     .pipe1 {
         display: none;
     }
+
+    .navbar h1 {
+        font-size: 26px;
+    }
+
+    .div-logo img {
+        width: 30px;
+    }
+
+    section#landing {
+        padding-top: 56px;
+    }
+
+    .div-landing .icon-building {
+        margin: 28px 0 28px 0;
+    }
+
+    section#about {
+        padding-top: 98px;
+    }
+
+    section#service {
+        padding: 64px 32px;
+        padding-top: 186px;
+    }
+
+    section#contact {
+        padding-top: 186px;
+        /* text-align: center;  */
+    }
+
+    section::before {
+        text-align: center;
+    }
+
+    .footer-about div {
+        padding: 0 0 16px 0;
+    }
 }
+
+@media only screen and (min-width: 343px) {
+    section#service {
+        padding-top: 98px;
+    }
+}
+
+@media only screen and (min-width: 364px) {
+    section#contact {
+        padding-top: 98px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    section#service {
+        padding: 64px 48px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    section#service {
+        padding: 64px 64px;
+    }
+}
+/* Responsive Mobile Section End */

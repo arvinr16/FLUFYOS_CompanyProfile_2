@@ -17,7 +17,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const mediaQuery = window.matchMedia("(min-width: 372px)");
+    const mediaQuery = window.matchMedia("(min-width: 320px)");
     const imgContainer = document.querySelector(".div-landing-img");
     const image = imgContainer?.querySelector("img");
     const target = document.querySelector(".btn-landing");
