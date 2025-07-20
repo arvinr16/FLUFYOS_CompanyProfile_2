@@ -783,8 +783,14 @@ footer div h6 {
 
 /* Responsive */
 
-/* Responsive Mobile Section Start */
-@media only screen and (min-width: 320px) { /* Smartphone Very Small and for Hamburger Navbar */
+@media only screen and (max-width: 1243px) {
+    form h1 {
+        text-align: center;
+    }
+}
+
+/* Responsive for Mobile Section Start */
+@media only screen and (max-width: 958px) {
     /* Hamburger Navbar feature Start */
     .hamburger {
         display: flex;
@@ -879,14 +885,8 @@ footer div h6 {
         padding-top: 98px;
     }
 
-    section#service {
-        padding: 64px 32px;
-        padding-top: 186px;
-    }
-
     section#contact {
-        padding-top: 186px;
-        /* text-align: center;  */
+        padding-top: 98px;
     }
 
     section::before {
@@ -894,31 +894,27 @@ footer div h6 {
     }
 
     .footer-about div {
-        padding: 0 0 16px 0;
+        padding: 0 0 24px 0;
+    }
+
+    .footer-div {
+        margin: 0 0 32px 0;
     }
 }
 
-@media only screen and (min-width: 343px) {
-    section#service {
-        padding-top: 98px;
-    }
-}
-
-@media only screen and (min-width: 364px) {
+@media only screen and (max-width: 364px) {
     section#contact {
-        padding-top: 98px;
+        padding-top: 198px;
+    }
+
+    .contact-p {
+        text-align: center;
     }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 343px) {
     section#service {
-        padding: 64px 48px;
+        padding-top: 198px;
     }
 }
-
-@media only screen and (min-width: 500px) {
-    section#service {
-        padding: 64px 64px;
-    }
-}
-/* Responsive Mobile Section End */
+/* Responsive for Mobile Section End */

@@ -17,21 +17,25 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const mediaQuery = window.matchMedia("(min-width: 320px)");
     const imgContainer = document.querySelector(".div-landing-img");
     const image = imgContainer?.querySelector("img");
     const target = document.querySelector(".btn-landing");
 
-    const originalParent = image?.parentNode;
-    const originalNextSibling = image?.nextSibling;
+    if (!image || !target) return;
+
+    // Simpan posisi awal
+    const originalParent = image.parentNode;
+    const originalNextSibling = image.nextSibling;
+
+    const mediaQuery = window.matchMedia("(max-width: 958px)");
 
     function handleResize(e) {
-        if(!image || !target || !originalParent) return;
-
-        if(e.matches) {
+        if (e.matches) {
+            // Layar max-width: 958px → pindah sebelum tombol
             target.parentNode.insertBefore(image, target);
         } else {
-            if(originalNextSibling) {
+            // Layar min-width: 958px → kembalikan ke posisi awal
+            if (originalNextSibling && originalNextSibling.parentNode === originalParent) {
                 originalParent.insertBefore(image, originalNextSibling);
             } else {
                 originalParent.appendChild(image);
@@ -39,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Jalankan saat pertama kali
     handleResize(mediaQuery);
 
+    // Dengarkan perubahan media query
     mediaQuery.addEventListener("change", handleResize);
 });
