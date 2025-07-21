@@ -889,6 +889,14 @@ footer div h6 {
         padding-top: 98px;
     }
 
+    .contact-building h1 {
+        text-align: center;
+    }
+    
+    .contact-building h3 {
+        text-align: center;
+    }
+
     section::before {
         text-align: center;
     }
