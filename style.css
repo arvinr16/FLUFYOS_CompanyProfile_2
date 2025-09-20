@@ -503,7 +503,7 @@ section#service {
 .service-div-item {
     display: flex;
     flex-direction: column;
-    padding: 16px 8px 18px 8px;
+    padding: 16px 80px 18px 80px;
     box-shadow: 2px 6px 8px rgba(125, 125, 125, 0.5);
     transition: 1s;
     cursor: default;
@@ -910,7 +910,17 @@ footer div h6 {
     }
 }
 
+@media only screen and (max-width: 454px) {
+    .service-div-item {
+        padding: 16px 60px 18px 60px;
+    }
+}
+
 @media only screen and (max-width: 364px) {
+    .service-div-item {
+        padding: 16px 40px 18px 40px;
+    }
+    
     section#contact {
         padding-top: 198px;
     }
