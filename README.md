@@ -1,6 +1,5 @@
 # FLUFYOS Company Profile 2
 
-
 # About repository:
 This is my other training project for making Website Design called 'FLUFYOS2'
 
