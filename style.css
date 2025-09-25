@@ -503,7 +503,7 @@ section#service {
 .service-div-item {
     display: flex;
     flex-direction: column;
-    padding: 16px 80px 18px 80px;
+    padding: 16px 8px 18px 8px;
     box-shadow: 2px 6px 8px rgba(125, 125, 125, 0.5);
     transition: 1s;
     cursor: default;
